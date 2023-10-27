@@ -1,0 +1,280 @@
+@media (max-width: 1024px) {
+    .trending {
+        &__inner {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__btn {
+            display: block;
+            margin: 25px auto;
+        }
+    }
+
+    .genres {
+        margin-top: 50px;
+    }
+
+    .actors {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .coming {
+        &__wrapper {
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        &__img {
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        &__soon {
+            min-height: 340px;
+            border-radius: 20px;
+            margin: 25px auto;
+            max-width: 720px;
+            width: 100%;
+        }
+
+        &__here {
+            max-width: 720px;
+            width: 100%;
+        }
+
+        &__here-title {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        &__here-btn {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer {
+        &__nav {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-top {
+        &__logo {
+            z-index: 1;
+        }
+
+        &__logo-firstChild {
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+        }
+
+        &__logo-lastChild {
+            font-size: 25px;
+        }
+
+        &__list,
+        &__bar {
+            display: none;
+        }
+
+        &__list {
+            transform: translateY(-150%);
+            transition: all .5s;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #010203;
+            padding-top: 90px;
+            padding-bottom: 30px;
+            width: 100%;
+            text-align: center;
+
+            &.active {
+                transform: translateY(0);
+            }
+        }
+
+        &__item {
+            &+.header-top__item {
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    .burger__menu {
+        width: 24px;
+        height: 24px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        align-items: center;
+        position: relative;
+        padding: 0;
+        display: flex;
+        order: 1;
+        z-index: 1;
+
+        & span {
+            width: 18px;
+            background-color: #fff;
+            height: 2px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 2px;
+            background-color: #fff;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        &::before {
+            top: 0;
+        }
+    }
+
+    .genres {
+        &__wraper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .coming {
+        margin-top: 50px;
+
+        &__wrapper {
+            display: none;
+        }
+
+        &__here {
+            display: block;
+        }
+
+        &__here-title {
+            padding-bottom: 35px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__here-btn {
+            display: block;
+            margin: 0 auto;
+            padding: 20px 50px;
+        }
+    }
+
+    .footer {
+        margin-top: 50px;
+
+        &__nav {
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        &__logo {
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 568px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .header-one {
+        &__title {
+            font-size: 45px;
+            line-height: 55px;
+            margin: 40px 0 15px;
+        }
+
+        &__text {
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__info-text {
+            &+.header-one__info-text {
+                margin-left: 20px;
+            }
+        }
+
+        &__btn {
+            padding: 15px;
+        }
+    }
+
+    .trending {
+        &__title {
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item {
+            margin-top: 0;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__btn {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    .genres {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            margin-top: 0;
+        }
+    }
+
+    .actors {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .coming {
+
+        &__here-title {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 20px;
+        }
+
+        &__here-btn {
+            padding: 15px 20px;
+        }
+    }
+}
